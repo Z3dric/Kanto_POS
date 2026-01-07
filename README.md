@@ -1,2 +1,2 @@
 # Kanto_POS
-https://github.com/genshinzedric-hue/Test.git
+ Point-of-sale for small Filipino businesses — sales, inventory, credit/utang, reports.
