@@ -22,6 +22,7 @@ This repository contains Simple POS, a mobile Point of Sale app built with Flutt
 - Language: Dart
 - Database: SQLite (sqflite)
 - State management: Provider (or your preferred pattern)
+- APi : Fireabase
 
 ## Getting Started
 
