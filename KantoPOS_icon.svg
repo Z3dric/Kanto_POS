@@ -1,0 +1,67 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D47A1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BCD4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00897B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="successGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#388E3C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded background -->
+  <rect width="512" height="512" rx="80" fill="url(#bgGradient)"/>
+  
+  <!-- Main icon group - centered and scaled -->
+  <g transform="translate(256, 256)">
+    
+    <!-- Cash register drawer (simplified) -->
+    <g transform="translate(-80, -60)">
+      <!-- Drawer body -->
+      <rect x="20" y="40" width="120" height="80" rx="8" fill="white" opacity="0.95"/>
+      
+      <!-- Drawer handle -->
+      <circle cx="80" cy="130" r="8" fill="url(#accentGradient)"/>
+      
+      <!-- Money compartments (coins/bills) -->
+      <rect x="30" y="55" width="20" height="20" rx="3" fill="url(#accentGradient)"/>
+      <rect x="60" y="55" width="20" height="20" rx="3" fill="url(#accentGradient)"/>
+      <rect x="90" y="55" width="20" height="20" rx="3" fill="url(#accentGradient)"/>
+      
+      <rect x="30" y="90" width="20" height="20" rx="3" fill="url(#accentGradient)" opacity="0.8"/>
+      <rect x="60" y="90" width="20" height="20" rx="3" fill="url(#accentGradient)" opacity="0.8"/>
+      <rect x="90" y="90" width="20" height="20" rx="3" fill="url(#accentGradient)" opacity="0.8"/>
+    </g>
+    
+    <!-- Receipt/Transaction symbol -->
+    <g transform="translate(60, -40)">
+      <!-- Receipt paper -->
+      <rect x="-25" y="-50" width="50" height="100" rx="6" fill="white" opacity="0.9"/>
+      
+      <!-- Receipt lines -->
+      <line x1="-15" y1="-35" x2="15" y2="-35" stroke="url(#accentGradient)" stroke-width="4" stroke-linecap="round"/>
+      <line x1="-15" y1="-20" x2="15" y2="-20" stroke="url(#accentGradient)" stroke-width="4" stroke-linecap="round"/>
+      <line x1="-15" y1="-5" x2="10" y2="-5" stroke="url(#accentGradient)" stroke-width="4" stroke-linecap="round"/>
+      <line x1="-15" y1="10" x2="15" y2="10" stroke="url(#accentGradient)" stroke-width="4" stroke-linecap="round"/>
+      <line x1="-15" y1="25" x2="8" y2="25" stroke="url(#accentGradient)" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- Total line highlight -->
+      <line x1="-15" y1="40" x2="15" y2="40" stroke="url(#accentGradient)" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Checkmark (success) -->
+    <g transform="translate(70, 70)">
+      <circle cx="0" cy="0" r="30" fill="url(#successGradient)"/>
+      <path d="M -12 0 L -2 10 L 15 -10" stroke="white" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+  </g>
+  
+  <!-- Border accent -->
+  <rect width="512" height="512" rx="80" fill="none" stroke="url(#successGradient)" stroke-width="3" opacity="0.6"/>
+</svg>
