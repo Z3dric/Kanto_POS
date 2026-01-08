@@ -38,6 +38,7 @@ dependencies:
 
   # Printing and sharing
   printing: ^5.11.1
+  pdf: ^3.10.1
   share_plus: ^7.2.1
 
   # Permissions and device features

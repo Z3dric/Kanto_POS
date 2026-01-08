@@ -14,7 +14,7 @@ class AddProductDialog extends StatelessWidget {
     final costController = TextEditingController();
     final stockController = TextEditingController();
     final categoryController = TextEditingController();
-    final barcodeController = TextEditingController();
+    // barcode removed
     final minStockController = TextEditingController();
 
     return AlertDialog(
@@ -43,7 +43,7 @@ class AddProductDialog extends StatelessWidget {
             const SizedBox(height: AppSpacing.sm),
             TextField(controller: categoryController, decoration: const InputDecoration(labelText: 'Category', border: OutlineInputBorder())),
             const SizedBox(height: AppSpacing.sm),
-            TextField(controller: barcodeController, decoration: const InputDecoration(labelText: 'Barcode (Optional)', border: OutlineInputBorder())),
+            // barcode field removed
           ],
         ),
       ),
@@ -64,7 +64,7 @@ class AddProductDialog extends StatelessWidget {
               cost: double.parse(costController.text),
               stock: int.parse(stockController.text),
               category: categoryController.text.isEmpty ? 'General' : categoryController.text,
-              barcode: barcodeController.text.isEmpty ? null : barcodeController.text,
+              barcode: null,
               minStock: minStockController.text.isEmpty ? 0 : int.parse(minStockController.text),
               createdAt: DateTime.now(),
               updatedAt: DateTime.now(),

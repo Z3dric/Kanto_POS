@@ -114,7 +114,6 @@ class ProductListItem extends StatelessWidget {
       itemBuilder: (context) => [
         const PopupMenuItem(value: 'edit', child: ListTile(leading: Icon(Icons.edit), title: Text('Edit'), contentPadding: EdgeInsets.zero)),
         const PopupMenuItem(value: 'stock', child: ListTile(leading: Icon(Icons.inventory), title: Text('Adjust Stock'), contentPadding: EdgeInsets.zero)),
-        const PopupMenuItem(value: 'barcode', child: ListTile(leading: Icon(Icons.qr_code), title: Text('View Barcode'), contentPadding: EdgeInsets.zero)),
         PopupMenuItem(value: 'toggle', child: ListTile(leading: Icon(product.isActive ? Icons.visibility_off : Icons.visibility), title: Text(product.isActive ? 'Deactivate' : 'Activate'), contentPadding: EdgeInsets.zero)),
         const PopupMenuItem(value: 'delete', child: ListTile(leading: Icon(Icons.delete, color: AppColors.error), title: Text('Delete', style: TextStyle(color: AppColors.error)), contentPadding: EdgeInsets.zero)),
       ],
@@ -136,9 +135,7 @@ class ProductListItem extends StatelessWidget {
       case 'stock':
         showDialog(context: context, builder: (context) => StockAdjustmentDialog(product: product));
         break;
-      case 'barcode':
-        _showBarcodeDialog(context, product);
-        break;
+      // barcode feature removed: no action
       case 'toggle':
         context.read<InventoryService>().toggleProductActive(product.id);
         break;
@@ -148,31 +145,7 @@ class ProductListItem extends StatelessWidget {
     }
   }
 
-  void _showBarcodeDialog(BuildContext context, Product product) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Product Barcode'),
-        content: Column(mainAxisSize: MainAxisSize.min, children: [
-          if (product.barcode != null) ...[
-            Container(padding: const EdgeInsets.all(AppSpacing.md), decoration: BoxDecoration(color: AppColors.background, borderRadius: BorderRadius.circular(AppBorderRadius.md)), child: Column(children: [
-              Text(product.barcode!, style: const TextStyle(fontFamily: 'JetBrainsMono', fontSize: 18, fontWeight: FontWeight.bold)),
-              const SizedBox(height: AppSpacing.md),
-              Container(height: 100, color: Colors.white, child: Center(child: Text(product.barcode!, style: const TextStyle(fontFamily: 'JetBrainsMono', fontSize: 24)))),
-            ])),
-          ] else ...[
-            const Text('No barcode assigned'),
-          ],
-          const SizedBox(height: AppSpacing.md),
-          Text('Product: ${product.name}', style: const TextStyle(fontWeight: FontWeight.bold)),
-        ]),
-        actions: [
-          if (product.barcode != null)
-            TextButton(onPressed: () { Navigator.pop(context); }, child: const Text('Close')),
-        ],
-      ),
-    );
-  }
+  // Barcode UI removed; barcode data remains in model/database if present.
 
   void _showDeleteConfirmation(BuildContext context, Product product) {
     showDialog(

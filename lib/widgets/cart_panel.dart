@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../models/sale.dart';
 import '../models/customer.dart';
 import '../services/pos_service.dart';
+import '../services/print_service.dart';
 import '../utils/constants.dart';
 
 class CartPanel extends StatefulWidget {
@@ -522,9 +523,14 @@ class _CartPanelState extends State<CartPanel> {
                 child: const Text('OK'),
               ),
               ElevatedButton(
-                onPressed: () {
-                  // TODO: Print receipt
-                    Navigator.of(context).pop();
+                onPressed: () async {
+                  Navigator.of(context).pop();
+                  try {
+                    await PrintService.printReceipt(transaction);
+                  } catch (e) {
+                    if (!mounted) return;
+                    ScaffoldMessenger.of(this.context).showSnackBar(SnackBar(content: Text('Print error: $e'), backgroundColor: AppColors.error));
+                  }
                 },
                 child: const Text('Print Receipt'),
               ),

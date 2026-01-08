@@ -268,7 +268,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final costController = TextEditingController();
     final stockController = TextEditingController();
     final categoryController = TextEditingController();
-    final barcodeController = TextEditingController();
+    // barcode removed: no controller
 
     showDialog(
       context: context,
@@ -301,11 +301,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 controller: categoryController,
                 decoration: const InputDecoration(labelText: 'Category'),
               ),
-              TextField(
-                controller: barcodeController,
-                decoration:
-                    const InputDecoration(labelText: 'Barcode (Optional)'),
-              ),
+              // barcode field removed
             ],
           ),
         ),
@@ -373,9 +369,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 category: categoryController.text.isEmpty
                     ? 'General'
                     : categoryController.text,
-                barcode: barcodeController.text.isEmpty
-                    ? null
-                    : barcodeController.text,
+                // barcode removed from product
+                barcode: null,
                 createdAt: DateTime.now(),
                 updatedAt: DateTime.now(),
               );
@@ -447,9 +442,6 @@ class _HomeScreenState extends State<HomeScreen> {
     final stockController =
         TextEditingController(text: product.stock.toString());
     final categoryController = TextEditingController(text: product.category);
-    final barcodeController =
-        TextEditingController(text: product.barcode ?? '');
-
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -481,10 +473,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 controller: categoryController,
                 decoration: const InputDecoration(labelText: 'Category'),
               ),
-              TextField(
-                controller: barcodeController,
-                decoration: const InputDecoration(labelText: 'Barcode'),
-              ),
+              // barcode field removed
             ],
           ),
         ),
@@ -549,9 +538,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 cost: cost,
                 stock: stock,
                 category: categoryController.text,
-                barcode: barcodeController.text.isEmpty
-                    ? null
-                    : barcodeController.text,
+                // barcode removed from product
+                barcode: null,
               );
 
               await inventoryService.updateProduct(updatedProduct);
