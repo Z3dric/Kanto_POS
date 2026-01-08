@@ -1,0 +1,72 @@
+name: simple_pos
+description: A mobile POS app inspired by Peddlr for small Filipino businesses
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Firebase
+  firebase_core: ^4.3.0
+  firebase_auth: ^6.1.3
+
+  # Core UI and navigation
+  cupertino_icons: ^1.0.6
+
+  # Database and local storage
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  shared_preferences: ^2.2.2
+
+  # State management
+  provider: ^6.1.1
+
+  # Charts and data visualization
+  fl_chart: ^0.65.0
+
+  # Image handling
+  image_picker: ^1.0.5
+  cached_network_image: ^3.3.1
+
+  # Utility packages
+  intl: ^0.18.1
+  uuid: ^4.2.2
+  flutter_slidable: ^3.0.2
+  flutter_typeahead: 5.2.0
+
+  # Printing and sharing
+  printing: ^5.11.1
+  share_plus: ^7.2.1
+
+  # Permissions and device features
+  permission_handler: ^11.1.0
+  flutter_keyboard_visibility: ^6.0.0
+  path_provider: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.otf
+        - asset: assets/fonts/Inter-Medium.otf
+          weight: 500
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetbrainsMonoRegular-RpvmM.ttf
