@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # Kanto_POS
  Point-of-sale for small Filipino businesses — sales, inventory, credit/utang, reports.
-````markdown
+
 # Kanto_POS — Simple POS
 
 Point-of-sale for small Filipino businesses — sales, inventory, credit/utang, reports.
