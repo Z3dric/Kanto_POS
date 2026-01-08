@@ -259,3 +259,6 @@ app.*.symbols
 android/app/google-services.json
 ios/Runner/GoogleService-Info.plist
 lib/firebase_options.dart
+
+# Allow committed release APK (tracked via Git LFS)
+!build/app/outputs/flutter-apk/KantoPOS.apk
