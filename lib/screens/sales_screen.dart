@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:simple_pos/models/sale.dart';
+import 'package:kanto_pos/models/sale.dart';
 import '../services/pos_service.dart';
 import '../widgets/search_bar.dart';
 import '../utils/constants.dart';

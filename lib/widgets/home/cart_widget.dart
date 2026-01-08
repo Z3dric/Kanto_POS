@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart' as flutter_services;
 import 'package:provider/provider.dart';
-import 'package:simple_pos/models/sale.dart' show PaymentMethod;
-import 'package:simple_pos/services/pos_service.dart';
-import 'package:simple_pos/services/inventory_service.dart';
-import 'package:simple_pos/utils/constants.dart';
+import 'package:kanto_pos/models/sale.dart' show PaymentMethod;
+import 'package:kanto_pos/services/pos_service.dart';
+import 'package:kanto_pos/services/inventory_service.dart';
+import 'package:kanto_pos/utils/constants.dart';
 
 class CartWidget extends StatelessWidget {
   const CartWidget({super.key});

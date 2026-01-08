@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:uuid/uuid.dart';
 import 'package:provider/provider.dart';
-import 'package:simple_pos/widgets/search_bar.dart';
+import 'package:kanto_pos/widgets/search_bar.dart';
 import '../models/expense.dart';
 import '../services/pos_service.dart';
 import '../utils/constants.dart';

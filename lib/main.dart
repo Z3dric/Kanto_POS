@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:simple_pos/screens/home_screen.dart';
-import 'package:simple_pos/screens/inventory_screen.dart';
-import 'package:simple_pos/screens/sales_screen.dart';
-import 'package:simple_pos/screens/credit_screen.dart';
-import 'package:simple_pos/screens/reports_screen.dart';
-import 'package:simple_pos/services/database_service.dart';
-import 'package:simple_pos/services/pos_service.dart';
-import 'package:simple_pos/services/inventory_service.dart';
-import 'package:simple_pos/services/report_service.dart';
-import 'package:simple_pos/utils/constants.dart';
-import 'package:simple_pos/utils/error_handler.dart';
+import 'package:kanto_pos/screens/home_screen.dart';
+import 'package:kanto_pos/screens/inventory_screen.dart';
+import 'package:kanto_pos/screens/sales_screen.dart';
+import 'package:kanto_pos/screens/credit_screen.dart';
+import 'package:kanto_pos/screens/reports_screen.dart';
+import 'package:kanto_pos/services/database_service.dart';
+import 'package:kanto_pos/services/pos_service.dart';
+import 'package:kanto_pos/services/inventory_service.dart';
+import 'package:kanto_pos/services/report_service.dart';
+import 'package:kanto_pos/utils/constants.dart';
+import 'package:kanto_pos/utils/error_handler.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:simple_pos/screens/login_screen.dart';
-import 'package:simple_pos/screens/signup_screen.dart';
-import 'package:simple_pos/screens/title_screen.dart';
-import 'package:simple_pos/services/auth_service.dart';
+import 'package:kanto_pos/screens/login_screen.dart';
+import 'package:kanto_pos/screens/signup_screen.dart';
+import 'package:kanto_pos/screens/title_screen.dart';
+import 'package:kanto_pos/services/auth_service.dart';
 import 'firebase_options.dart';
 
 /// Main entry point for Kanto POS application

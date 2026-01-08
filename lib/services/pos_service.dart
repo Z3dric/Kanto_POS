@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:simple_pos/models/sale.dart';
+import 'package:kanto_pos/models/sale.dart';
 import 'package:uuid/uuid.dart';
 import '../models/product.dart';
 import '../models/customer.dart';

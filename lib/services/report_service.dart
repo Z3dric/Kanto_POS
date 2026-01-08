@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:intl/intl.dart';
-import 'package:simple_pos/models/sale.dart';
-import 'package:simple_pos/models/expense.dart';
-import 'package:simple_pos/models/customer.dart';
+import 'package:kanto_pos/models/sale.dart';
+import 'package:kanto_pos/models/expense.dart';
+import 'package:kanto_pos/models/customer.dart';
 import 'database_service.dart';
 
 class ReportService extends ChangeNotifier {

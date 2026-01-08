@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:simple_pos/models/customer.dart';
-import 'package:simple_pos/utils/constants.dart';
+import 'package:kanto_pos/models/customer.dart';
+import 'package:kanto_pos/utils/constants.dart';
 
 class CustomerList extends StatelessWidget {
   final List<Customer> customers;

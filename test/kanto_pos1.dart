@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 
-import 'package:simple_pos/main.dart';
-import 'package:simple_pos/services/database_service.dart';
-import 'package:simple_pos/services/pos_service.dart';
-import 'package:simple_pos/services/inventory_service.dart';
-import 'package:simple_pos/services/report_service.dart';
-import 'package:simple_pos/services/auth_service.dart';
+import 'package:kanto_pos/main.dart';
+import 'package:kanto_pos/services/database_service.dart';
+import 'package:kanto_pos/services/pos_service.dart';
+import 'package:kanto_pos/services/inventory_service.dart';
+import 'package:kanto_pos/services/report_service.dart';
+import 'package:kanto_pos/services/auth_service.dart';
 
 void main() {
   late DatabaseService databaseService;
