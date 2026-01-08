@@ -1,4 +1,4 @@
-package com.example.kanto_pos1
+package com.akaws.kantopos
 
 import io.flutter.embedding.android.FlutterActivity
 

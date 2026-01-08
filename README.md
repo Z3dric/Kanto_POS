@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Kanto_POS
- Point-of-sale for small Filipino businesses — sales, inventory, credit/utang, reports.
-
 # Kanto_POS — Simple POS
 
 Point-of-sale for small Filipino businesses — sales, inventory, credit/utang, reports.
@@ -22,7 +18,7 @@ This repository contains Simple POS, a mobile Point of Sale app built with Flutt
 - Language: Dart
 - Database: SQLite (sqflite)
 - State management: Provider (or your preferred pattern)
-- APi : Fireabase
+- API : Firebase
 
 ## Getting Started
 
@@ -43,9 +39,3 @@ flutter run
 ## Project Structure
 
 See `lib/` for app code: `main.dart`, `models/`, `screens/`, `services/`, `widgets/`, `utils/`.
-
----
-
-This README was merged to preserve the more complete project documentation while keeping the repository name `Kanto_POS`.
-````
-- **Mobile Optimized**: Touch-friendly interface with large tap targets

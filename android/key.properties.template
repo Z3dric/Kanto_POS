@@ -1,0 +1,7 @@
+# Copy this file to android/key.properties and fill values
+# Do NOT commit the real file (it's already in .gitignore)
+storePassword=YOUR_STORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=YOUR_KEY_ALIAS
+# Use an absolute path on Windows, escape backslashes or use forward slashes
+storeFile=C:\\full\\path\\to\\your\\key.jks
